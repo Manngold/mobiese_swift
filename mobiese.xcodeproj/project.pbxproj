@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26492C102781AE4F009FF56E /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26492C0F2781AE4F009FF56E /* MovieListResponse.swift */; };
+		26492C122781BDE3009FF56E /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26492C112781BDE3009FF56E /* MovieListView.swift */; };
 		26891F46277F231D009EEE89 /* mobieseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F45277F231D009EEE89 /* mobieseApp.swift */; };
-		26891F48277F231D009EEE89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F47277F231D009EEE89 /* ContentView.swift */; };
+		26891F48277F231D009EEE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F47277F231D009EEE89 /* MainView.swift */; };
 		26891F4A277F231E009EEE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26891F49277F231E009EEE89 /* Assets.xcassets */; };
 		26891F4D277F231E009EEE89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26891F4C277F231E009EEE89 /* Preview Assets.xcassets */; };
 		26891F57277F231E009EEE89 /* mobieseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F56277F231E009EEE89 /* mobieseTests.swift */; };
 		26891F61277F231E009EEE89 /* mobieseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F60277F231E009EEE89 /* mobieseUITests.swift */; };
 		26891F63277F231E009EEE89 /* mobieseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F62277F231E009EEE89 /* mobieseUITestsLaunchTests.swift */; };
+		26891F78277F3144009EEE89 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F77277F3144009EEE89 /* Movie.swift */; };
+		26891F7D277F47C8009EEE89 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7C277F47C8009EEE89 /* ApiManager.swift */; };
+		26891F7F277F6433009EEE89 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7E277F6433009EEE89 /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26492C0F2781AE4F009FF56E /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		26492C112781BDE3009FF56E /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		26891F42277F231D009EEE89 /* mobiese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobiese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26891F45277F231D009EEE89 /* mobieseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseApp.swift; sourceTree = "<group>"; };
-		26891F47277F231D009EEE89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26891F47277F231D009EEE89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		26891F49277F231E009EEE89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26891F4C277F231E009EEE89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26891F52277F231E009EEE89 /* mobieseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobieseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,9 @@
 		26891F5C277F231E009EEE89 /* mobieseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobieseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26891F60277F231E009EEE89 /* mobieseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseUITests.swift; sourceTree = "<group>"; };
 		26891F62277F231E009EEE89 /* mobieseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26891F77277F3144009EEE89 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		26891F7C277F47C8009EEE89 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		26891F7E277F6433009EEE89 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,11 @@
 		26891F44277F231D009EEE89 /* mobiese */ = {
 			isa = PBXGroup;
 			children = (
+				26891F79277F479C009EEE89 /* Managers */,
+				26891F71277F2338009EEE89 /* Models */,
+				26891F70277F2332009EEE89 /* ViewModels */,
+				26891F6F277F232A009EEE89 /* Views */,
 				26891F45277F231D009EEE89 /* mobieseApp.swift */,
-				26891F47277F231D009EEE89 /* ContentView.swift */,
 				26891F49277F231E009EEE89 /* Assets.xcassets */,
 				26891F4B277F231E009EEE89 /* Preview Content */,
 			);
@@ -125,6 +138,40 @@
 				26891F62277F231E009EEE89 /* mobieseUITestsLaunchTests.swift */,
 			);
 			path = mobieseUITests;
+			sourceTree = "<group>";
+		};
+		26891F6F277F232A009EEE89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26891F47277F231D009EEE89 /* MainView.swift */,
+				26492C112781BDE3009FF56E /* MovieListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26891F70277F2332009EEE89 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				26891F7E277F6433009EEE89 /* MovieList.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26891F71277F2338009EEE89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26891F77277F3144009EEE89 /* Movie.swift */,
+				26492C0F2781AE4F009FF56E /* MovieListResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26891F79277F479C009EEE89 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				26891F7C277F47C8009EEE89 /* ApiManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26891F48277F231D009EEE89 /* ContentView.swift in Sources */,
+				26492C122781BDE3009FF56E /* MovieListView.swift in Sources */,
+				26891F7D277F47C8009EEE89 /* ApiManager.swift in Sources */,
+				26891F48277F231D009EEE89 /* MainView.swift in Sources */,
+				26891F78277F3144009EEE89 /* Movie.swift in Sources */,
+				26891F7F277F6433009EEE89 /* MovieList.swift in Sources */,
+				26492C102781AE4F009FF56E /* MovieListResponse.swift in Sources */,
 				26891F46277F231D009EEE89 /* mobieseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
