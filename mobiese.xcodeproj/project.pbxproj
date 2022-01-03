@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26492C102781AE4F009FF56E /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26492C0F2781AE4F009FF56E /* MovieListResponse.swift */; };
 		26492C122781BDE3009FF56E /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26492C112781BDE3009FF56E /* MovieListView.swift */; };
+		26492C1527833322009FF56E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26492C1427833322009FF56E /* CardView.swift */; };
 		26891F46277F231D009EEE89 /* mobieseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F45277F231D009EEE89 /* mobieseApp.swift */; };
 		26891F48277F231D009EEE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F47277F231D009EEE89 /* MainView.swift */; };
 		26891F4A277F231E009EEE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26891F49277F231E009EEE89 /* Assets.xcassets */; };
@@ -41,6 +42,9 @@
 /* Begin PBXFileReference section */
 		26492C0F2781AE4F009FF56E /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
 		26492C112781BDE3009FF56E /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		26492C1427833322009FF56E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		26492C1627833ED2009FF56E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		26492C17278342E9009FF56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		26891F42277F231D009EEE89 /* mobiese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobiese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26891F45277F231D009EEE89 /* mobieseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseApp.swift; sourceTree = "<group>"; };
 		26891F47277F231D009EEE89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -81,9 +85,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26492C132783330C009FF56E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				26492C1427833322009FF56E /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		26891F39277F231D009EEE89 = {
 			isa = PBXGroup;
 			children = (
+				26492C1627833ED2009FF56E /* Config.xcconfig */,
 				26891F44277F231D009EEE89 /* mobiese */,
 				26891F55277F231E009EEE89 /* mobieseTests */,
 				26891F5F277F231E009EEE89 /* mobieseUITests */,
@@ -104,6 +117,7 @@
 		26891F44277F231D009EEE89 /* mobiese */ = {
 			isa = PBXGroup;
 			children = (
+				26492C17278342E9009FF56E /* Info.plist */,
 				26891F79277F479C009EEE89 /* Managers */,
 				26891F71277F2338009EEE89 /* Models */,
 				26891F70277F2332009EEE89 /* ViewModels */,
@@ -143,6 +157,7 @@
 		26891F6F277F232A009EEE89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				26492C132783330C009FF56E /* Components */,
 				26891F47277F231D009EEE89 /* MainView.swift */,
 				26492C112781BDE3009FF56E /* MovieListView.swift */,
 			);
@@ -307,6 +322,7 @@
 				26492C122781BDE3009FF56E /* MovieListView.swift in Sources */,
 				26891F7D277F47C8009EEE89 /* ApiManager.swift in Sources */,
 				26891F48277F231D009EEE89 /* MainView.swift in Sources */,
+				26492C1527833322009FF56E /* CardView.swift in Sources */,
 				26891F78277F3144009EEE89 /* Movie.swift in Sources */,
 				26891F7F277F6433009EEE89 /* MovieList.swift in Sources */,
 				26492C102781AE4F009FF56E /* MovieListResponse.swift in Sources */,
@@ -349,6 +365,7 @@
 /* Begin XCBuildConfiguration section */
 		26891F64277F231E009EEE89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26492C1627833ED2009FF56E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -410,6 +427,7 @@
 		};
 		26891F65277F231E009EEE89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26492C1627833ED2009FF56E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -473,6 +491,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"mobiese/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mobiese/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,6 +520,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"mobiese/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mobiese/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

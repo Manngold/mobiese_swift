@@ -5,8 +5,15 @@ class MovieList: ObservableObject{
     @Published var topRated: [Movie] = []
     @Published var upComing: [Movie] = []
     
-    let baseUrl = "https://api.themoviedb.org/3"
-    let apiKey = "c8d7c73d573d01c32347691c8f0c99bc"
+    var baseUrl: String {
+        if let unParsedBaseUrl = Bundle.main.infoDictionary?["BASE_URL"] as? String {
+            return unParsedBaseUrl.replacingOccurrences(of: "#()", with: "//")
+        } else {
+            return ""
+        }
+    }
+    
+    let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String ?? ""
     
     func fetchMainList(){
         fetchNowPlaying()

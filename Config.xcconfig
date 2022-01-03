@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  mobiese
+//
+//  Created by Shaashop on 2022/01/03.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = c8d7c73d573d01c32347691c8f0c99bc
+BASE_URL = https:#()api.themoviedb.org/3
+IMAGE_BASE_URL = https:#()image.tmdb.org/t/p/w500
