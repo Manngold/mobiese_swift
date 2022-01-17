@@ -1,12 +1,31 @@
 import Foundation
+import Combine
 
 class ApiManager {
-    class func fetch(resource: String, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void){
-        guard let url = URL(string: "\(resource)") else {
-            print("URL is nil")
-            return
+    
+    func fetchMovieList(resource: String?) -> AnyPublisher<MovieListResponse, MovieListError> {
+        guard let validateUrl = resource else {
+            let error = MovieListError.error("URL이 존재하지 않습니다.")
+            return Fail(error: error).eraseToAnyPublisher()
         }
-        let task = URLSession.shared.dataTask(with: url, completionHandler: completionHandler)
-        task.resume()
-    }
+        
+        guard let targetUrl = URL(string: validateUrl) else {
+            let error = MovieListError.error("유효하지 않은 URL")
+            return Fail(error: error).eraseToAnyPublisher()
+        }
+        
+        return URLSession.shared.dataTaskPublisher(for: targetUrl)
+            .mapError{ _ in
+                MovieListError.error("TMDB API Error")
+            }
+            .flatMap { data in
+                return Just(data.data)
+                    .decode(type: MovieListResponse.self, decoder: JSONDecoder())
+                    .mapError { _ in
+                        .error("JSON Parsing Error")
+                    }
+            }
+            .eraseToAnyPublisher()
+      }
+    
 }
