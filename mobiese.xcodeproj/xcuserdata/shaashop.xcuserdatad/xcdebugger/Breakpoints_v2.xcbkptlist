@@ -23,31 +23,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD63F40E-FED4-4D11-9542-BC33379CB6C9"
+            uuid = "FA7A19BF-D5DF-48B4-9137-5D6EFD1384E4"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/ViewModels/MovieList.swift"
+            filePath = "mobiese/Views/MovieListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "completionHandler(data:response:error:)"
-            landmarkType = "9">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "MovieListView"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DC06122C-8CD9-480C-9AA0-7EBF6B920772"
+            uuid = "4E70E916-6915-4E91-8CD4-E5CDFB32B652"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/ViewModels/MovieList.swift"
+            filePath = "mobiese/ViewModels/MovieListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "fetchNowPlaying()"
             landmarkType = "7">
          </BreakpointContent>
@@ -55,97 +55,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4DE1A02D-11AE-4126-B4ED-AFE7E8FA5CF7"
-            shouldBeEnabled = "Yes"
+            uuid = "D54D41F7-AFDC-40AF-91D3-FA85D09E9175"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/ViewModels/MovieList.swift"
+            filePath = "mobiese/ViewModels/MovieListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "completionHandler(data:response:error:)"
-            landmarkType = "9">
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchNowPlaying()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E322BC2C-1371-4A41-8CEF-853CA489F364"
-            shouldBeEnabled = "Yes"
+            uuid = "A0B37BA7-E378-4639-B6D3-972AEBB4C18B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/ViewModels/MovieList.swift"
+            filePath = "mobiese/Network/MovieListNetwork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "completionHandler(data:response:error:)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "E322BC2C-1371-4A41-8CEF-853CA489F364 - 18e0cc780d15368d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "completionHandler(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "mobiese"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shaashop/Desktop/mobiese/mobiese/ViewModels/MovieList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "352">
-               </Location>
-               <Location
-                  uuid = "E322BC2C-1371-4A41-8CEF-853CA489F364 - 18e0cc780d15368d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "completionHandler(data: Swift.Optional&lt;Foundation.Data&gt;, response: Swift.Optional&lt;__C.NSURLResponse&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "mobiese"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shaashop/Desktop/mobiese/mobiese/ViewModels/MovieList.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "416">
-               </Location>
-            </Locations>
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchMovieList(resource:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "85F8CA30-2BDC-4528-A5A6-17ABAD40CB2C"
-            shouldBeEnabled = "Yes"
+            uuid = "927E6201-79CB-4BC6-A1C3-9A1C12AA5B6D"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/ViewModels/MovieList.swift"
+            filePath = "mobiese/Network/MovieListNetwork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "completionHandler(data:response:error:)"
-            landmarkType = "9">
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchMovieList(resource:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FA7A19BF-D5DF-48B4-9137-5D6EFD1384E4"
-            shouldBeEnabled = "Yes"
+            uuid = "A2AECB47-DD9B-4751-A92C-093524FF2DF3"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "mobiese/Views/MovieListView.swift"
+            filePath = "mobiese/Network/MovieListNetwork.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "MovieListView"
-            landmarkType = "14">
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchMovieList(resource:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AADE1A18-0DF8-46AD-8B81-7A44D4C3918E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mobiese/Network/MovieListNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchMovieList(resource:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

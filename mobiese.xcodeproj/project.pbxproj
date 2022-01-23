@@ -18,8 +18,8 @@
 		26891F61277F231E009EEE89 /* mobieseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F60277F231E009EEE89 /* mobieseUITests.swift */; };
 		26891F63277F231E009EEE89 /* mobieseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F62277F231E009EEE89 /* mobieseUITestsLaunchTests.swift */; };
 		26891F78277F3144009EEE89 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F77277F3144009EEE89 /* Movie.swift */; };
-		26891F7D277F47C8009EEE89 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7C277F47C8009EEE89 /* ApiManager.swift */; };
-		26891F7F277F6433009EEE89 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7E277F6433009EEE89 /* MovieList.swift */; };
+		26891F7D277F47C8009EEE89 /* MovieListNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7C277F47C8009EEE89 /* MovieListNetwork.swift */; };
+		26891F7F277F6433009EEE89 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26891F7E277F6433009EEE89 /* MovieListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		26891F60277F231E009EEE89 /* mobieseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseUITests.swift; sourceTree = "<group>"; };
 		26891F62277F231E009EEE89 /* mobieseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobieseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		26891F77277F3144009EEE89 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		26891F7C277F47C8009EEE89 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
-		26891F7E277F6433009EEE89 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		26891F7C277F47C8009EEE89 /* MovieListNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListNetwork.swift; sourceTree = "<group>"; };
+		26891F7E277F6433009EEE89 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				26492C17278342E9009FF56E /* Info.plist */,
-				26891F79277F479C009EEE89 /* Managers */,
+				26891F79277F479C009EEE89 /* Network */,
 				26891F71277F2338009EEE89 /* Models */,
 				26891F70277F2332009EEE89 /* ViewModels */,
 				26891F6F277F232A009EEE89 /* Views */,
@@ -167,7 +167,7 @@
 		26891F70277F2332009EEE89 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				26891F7E277F6433009EEE89 /* MovieList.swift */,
+				26891F7E277F6433009EEE89 /* MovieListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -181,12 +181,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		26891F79277F479C009EEE89 /* Managers */ = {
+		26891F79277F479C009EEE89 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				26891F7C277F47C8009EEE89 /* ApiManager.swift */,
+				26891F7C277F47C8009EEE89 /* MovieListNetwork.swift */,
 			);
-			path = Managers;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,11 +320,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26492C122781BDE3009FF56E /* MovieListView.swift in Sources */,
-				26891F7D277F47C8009EEE89 /* ApiManager.swift in Sources */,
+				26891F7D277F47C8009EEE89 /* MovieListNetwork.swift in Sources */,
 				26891F48277F231D009EEE89 /* MainView.swift in Sources */,
 				26492C1527833322009FF56E /* CardView.swift in Sources */,
 				26891F78277F3144009EEE89 /* Movie.swift in Sources */,
-				26891F7F277F6433009EEE89 /* MovieList.swift in Sources */,
+				26891F7F277F6433009EEE89 /* MovieListViewModel.swift in Sources */,
 				26492C102781AE4F009FF56E /* MovieListResponse.swift in Sources */,
 				26891F46277F231D009EEE89 /* mobieseApp.swift in Sources */,
 			);
@@ -489,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mobiese/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mobiese/Info.plist;
@@ -518,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mobiese/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mobiese/Info.plist;

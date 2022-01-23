@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-class ApiManager {
+class MovieListNetwork {
     
     func fetchMovieList(resource: String?) -> AnyPublisher<MovieListResponse, MovieListError> {
         guard let validateUrl = resource else {
@@ -15,7 +15,7 @@ class ApiManager {
         }
         
         return URLSession.shared.dataTaskPublisher(for: targetUrl)
-            .mapError{ _ in
+            .mapError { _ in
                 MovieListError.error("TMDB API Error")
             }
             .flatMap { data in

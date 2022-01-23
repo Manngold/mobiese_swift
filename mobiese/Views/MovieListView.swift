@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct MovieListView: View {
-    var movieList: [Movie] = []
+    @StateObject var viewModel = MovieListViewModel()
+    
     var pageTitle: String
+    
     
     var imageBaseUrl: String {
         if let unParsedBaseUrl = Bundle.main.infoDictionary?["IMAGE_BASE_URL"] as? String {
@@ -22,10 +24,13 @@ struct MovieListView: View {
     var body: some View {
         NavigationView{
             List{
-                ForEach(movieList, id:\.self){movie in
+                ForEach(viewModel.nowPlaying, id:\.self){movie in
                     HStack{
                         CardView(title: movie.title, posterPath: "\(imageBaseUrl)\(movie.posterPath ?? "")", releaseDate: movie.releaseDate, voteAverage: movie.voteAverage, voteCount: movie.voteCount)
-                    }.padding(3)
+                    }.onAppear{
+                        viewModel.loadMoreContentIfNeeded(currentItem: movie)
+                    }
+                    .padding(3)
                 }
             }
             .navigationTitle(pageTitle)

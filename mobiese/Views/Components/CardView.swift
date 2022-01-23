@@ -17,7 +17,7 @@ struct CardView: View {
                 } else {
                     Color.gray // Acts as a placeholder.
                 }
-            }
+            }.frame(width:300, height:500)
             
             VStack(alignment: .leading){
                 Text(title)
@@ -32,7 +32,7 @@ struct CardView: View {
                     Text("\(voteCount)").font(.subheadline)
                 }
             }
-        }
+        }.padding(3)
     }
 }
 
