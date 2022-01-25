@@ -7,6 +7,10 @@ struct MainView: View {
                 Image(systemName: "play.tv")
                 Text("Now Playing")
             }
+            SearchView().tabItem{
+                Image(systemName: "magnifyingglass")
+                Text("Search")
+            }
             
         }
     }
