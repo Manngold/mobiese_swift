@@ -23,10 +23,9 @@ struct SearchView: View {
     }
     
     var body: some View {
-        NavigationView{
-            VStack{
-                SearchBar(text: $viewModel.searchText)
-                Spacer()
+        VStack{
+            SearchBar(text: $viewModel.searchText)
+            NavigationView{
                 List{
                     ForEach(viewModel.searchResult, id:\.self){movie in
                         HStack{
